@@ -5,7 +5,7 @@ import Hero from "../components/Hero"
 
 function HomePage(){
     return(
-        <div className="min-h-screen bg-gray-400">
+        <div className="min-h-screen bg-primary-400">
             <Hero />
         </div>
     )
