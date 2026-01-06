@@ -24,14 +24,14 @@ export default function Hero(){
                     <Button text="How It Works" variant="outline" className="w-9/10"/>                
                 </div>
                 <hr className="mx-8 mt-8 border-primary-600"></hr>
-                <div className="grid grid-cols-3 px-8 mt-6 gap-10">
+                <div className="grid grid-cols-3 px-8 mt-6 gap-12">
                     <div className="flex flex-col items-center text-light">
                         <p className="font-heading font-bold text-3xl">10+</p>
                         <p className="font-body text-xs text-center">Budget Recipes<br/>Available</p>
                     </div>
                     <div className="flex flex-col items-center text-light">
-                        <p className="font-heading font-bold text-3xl">$2-$8</p>
-                        <p className="font-body text-xs text-center">Recipe Price Range</p>
+                        <p className="font-heading font-bold text-3xl">Affordable</p>
+                        <p className="font-body text-xs text-center">Recipe Price<br/>Range</p>
                     </div>
                     <div className="flex flex-col items-center text-light">
                         <p className="font-heading font-bold text-3xl">3+</p>
