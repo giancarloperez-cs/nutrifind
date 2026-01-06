@@ -4,10 +4,8 @@ import Button from "./Button";
 export default function Hero(){
     return(
         <div className="h-[70vh] relative bg-cover bg-center" style={{backgroundImage: "url('/images/hero-bg.jpg')"}}>
-            {/* Overlay - just a colored transparent layer */}
             <div className="absolute inset-0 bg-primary opacity-93"></div>
             
-            {/* Content wrapper - makes content appear above overlay */}
             <div className="relative z-10 flex flex-col h-full">
                 <div className="flex flex-col items-center pt-10 px-4">
                     <h1 className="text-3xl font-bold font-heading text-light mb-5 text-center">Welcome to NutriFind</h1>
