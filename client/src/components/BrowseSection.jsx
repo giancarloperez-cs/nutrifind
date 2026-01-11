@@ -15,26 +15,32 @@ export default function BrowseSection() {
                 <p className="font-body text-[14px] font-light text-dark mb-10">
                     for more precise filters, head over to the recipe browser
                 </p>
-                <Card
-                icon={<FaDollarSign className="text-primary-600 text-2sm "></FaDollarSign>}
-                heading="Under $10"
-                description="Complete meals for less than the cost of fast food"
-                />
-                <Card
-                icon={<FaFireAlt className="text-primary-600 text-2sm"></FaFireAlt>}
-                heading="No Cooking Required"
-                description="Delicious meals with zero cooking required"
-                />
-                <Card
-                icon={<FaClock className="text-primary-600 text-2sm"></FaClock>}
-                heading="Quick Meals"
-                description="In a rush? Meals ready in under 30 minutes"
-                />
-                <Card
-                icon={<FaCreditCard className="text-primary-600 text-2sm"></FaCreditCard>}
-                heading="EBT Friendly"
-                description="All ingredients are eligible for purchase with EBT"
-                />
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+                    <Card
+                    icon={<FaDollarSign className="text-primary-600 text-2sm "></FaDollarSign>}
+                    heading="Under $10"
+                    description="Complete meals for less than the cost of fast food"
+                    imageUrl="/images/under-ten-card-bg.jpg"
+                    />
+                    <Card
+                    icon={<FaFireAlt className="text-primary-600 text-2sm"></FaFireAlt>}
+                    heading="No Cooking Required"
+                    description="Delicious meals with zero cooking required"
+                    imageUrl="/images/no-cooking-card-bg.jpg"
+                    />
+                    <Card
+                    icon={<FaClock className="text-primary-600 text-2sm"></FaClock>}
+                    heading="Quick Meals"
+                    description="In a rush? Meals ready in under 30 minutes"
+                    imageUrl="/images/quick-meals-card-bg.jpg"
+                    />
+                    <Card
+                    icon={<FaCreditCard className="text-primary-600 text-2sm"></FaCreditCard>}
+                    heading="EBT Friendly"
+                    description="All ingredients are eligible for purchase with EBT"
+                    imageUrl="/images/ebt-friendly-card-bg.jpg"
+                    />
+                </div>
             </div>
         </div>
     )
