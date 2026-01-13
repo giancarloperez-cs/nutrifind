@@ -7,7 +7,7 @@ export default function Button({text, variant = "primary", onClick, className=""
     return(
         <button 
         className={`px-4 py-4 rounded-lg font-body font-semibold transition-colors ${variants[variant]} ${className}`} onClick={onClick}>
-            {text}
+            {text}  
         </button>
     )
 }

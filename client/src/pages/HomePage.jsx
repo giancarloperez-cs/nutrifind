@@ -4,12 +4,18 @@ import RecipeCard from "../components/recipeCard"
 import { MdNavigateNext } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Badge from "../components/Badge";
+import { FaRegHeart, FaNutritionix} from "react-icons/fa";
 
 function HomePage(){
     return(
         <div className="min-h-screen bg-light">
             <Hero/>
             <BrowseSection/>
+
+            {/* FEATURED MEALS */}
+            {/* FEATURED MEALS */}
+            {/* FEATURED MEALS */}
+            
             <section className="py-12">
                 <p className="font-heading text-3xl mb-3 justify-start px-4">Featured Meals</p>
                 <p className="mx-4 font-body text-sm mb-6">witty line about eating cheap goes here</p>
@@ -43,8 +49,25 @@ function HomePage(){
                     <p className="mt-6">See all recipes <MdNavigateNext className="inline text-3xl font-bold"/></p>
                 </Link>
             </section>
-            <section className="py-12 bg-primary-100">
-                <Badge/>
+
+            {/* OUR MISSION SECTION */}
+            {/* OUR MISSION SECTION */}
+            {/* OUR MISSION SECTION */}
+
+            <section className="py-8 bg-primary-100">
+                <div className="mx-4">
+                    <Badge
+                    icon={<FaRegHeart className=''/>}
+                    text={"Our Mission"}
+                    variant={"light"}
+                    />
+                    <p className="font-heading pt-8 text-2xl">
+                        What NutriFind Does
+                    </p>
+                    <p className="font-body pt-2">
+                        NutriFind helps people in low-income communities to eat healthy on a budget by connecting them with affordable, nutritious recipes tailored to the stores they already shop. (Walmart, Northgate, El Super, etc…) We believe everyone deserves access to healthy food, regardless of income. By bridging the gap between nutrition and affordability, NutriFind makes healthy eating accessible, practical, and achievable.
+                    </p>
+                </div>
             </section>
         </div>
     )
