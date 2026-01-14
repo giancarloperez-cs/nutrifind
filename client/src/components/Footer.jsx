@@ -12,7 +12,7 @@ export default function Footer(){
                 <p className="text-sm text-light font-body">Learn more about NutriFind</p>
             </div>
             <hr className="border-light-700"></hr>
-            <div className="py-6 bg-accent-400 grid grid-cols-2 font-body text-light text-sm">
+            <div className="py-6 bg-accent-400 grid grid-cols-2  font-body text-light text-sm">
                 <div className="px-4">
                     <p>Terms & Conditions</p>
                     <p>Privacy Policy</p>

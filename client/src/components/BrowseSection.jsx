@@ -9,7 +9,7 @@ export default function BrowseSection() {
     return (
         <div>
             <div className="text-center">
-                <p className="font-body text-[20px] font-bold text-dark mb-4 mt-10">
+                <p className="font-body text-2xl font-bold text-dark mb-4 mt-10">
                     Search by Quick Filters
                 </p>
                 <p className="font-body text-[14px] font-light text-dark mb-10">
