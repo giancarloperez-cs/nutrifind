@@ -13,7 +13,9 @@ function HomePage(){
 
             {/* FEATURED MEALS */}
             {/* FEATURED MEALS */}
-            {/* FEATURED MEALS */}
+            {/* has cards for meals depending on their popularity, 
+            thinking of doing it based on times favorited or something 
+            like that, will pull info from database */}
 
             <section className="py-12">
                 <p className="font-heading text-3xl mb-3 justify-start px-4">Featured Meals</p>
