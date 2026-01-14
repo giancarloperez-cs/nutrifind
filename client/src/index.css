@@ -71,3 +71,7 @@
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Sintony', sans-serif;
 }
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
