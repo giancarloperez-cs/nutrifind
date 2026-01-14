@@ -6,7 +6,7 @@ import Navbar from "./components/navbar"
 import Hello from "./components/Hello"
 import Hero from "./components/Hero"
 import Fruits from "./components/Fruits"
-
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/recipes" element={<RecipeBrowser />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

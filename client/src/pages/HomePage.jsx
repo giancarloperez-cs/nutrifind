@@ -5,7 +5,6 @@ import { MdNavigateNext } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Badge from "../components/Badge";
 import { FaRegHeart, FaNutritionix} from "react-icons/fa";
-
 function HomePage(){
     return(
         <div className="min-h-screen bg-light">
@@ -15,7 +14,7 @@ function HomePage(){
             {/* FEATURED MEALS */}
             {/* FEATURED MEALS */}
             {/* FEATURED MEALS */}
-            
+
             <section className="py-12">
                 <p className="font-heading text-3xl mb-3 justify-start px-4">Featured Meals</p>
                 <p className="mx-4 font-body text-sm mb-6">witty line about eating cheap goes here</p>
