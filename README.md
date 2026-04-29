@@ -1,3 +1,8 @@
+
+**Project Objective:**   
+NutriFind is a non-profit community organization dedicated to bringing about health to impoverished areas or individuals experiencing financial instability. It is our mission to make eating healthy as informative and affordable as possible; promoting the short-term and long term benefits that come with it. 
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

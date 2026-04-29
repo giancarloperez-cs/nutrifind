@@ -1,77 +1,129 @@
 @import "tailwindcss";
 
-@theme{
-    --color-primary: #059669;
-    --color-light: #F4F1F2;
-    --color-dark: #0E0C0D;
-    --color-accent: #514349;
-    --color-muted: #B1A69F;
-    --color-primary: oklch(59.597% 0.12742 163.23);
-    --color-primary-50: oklch(88.584% 0.15078 168.9);
-    --color-primary-100: #F2FDF8;
-    --color-primary-200: oklch(86.628% 0.17956 164.47);
-    --color-primary-300: oklch(81.552% 0.1767 162.5);
-    --color-primary-400: oklch(70.667% 0.15158 163.14);
-    --color-primary-500: oklch(59.597% 0.12742 163.23);
-    --color-primary-600: oklch(43.347% 0.09122 164.05);
-    --color-primary-700: oklch(25% 0.04956 168.05);
-    --color-primary-800: oklch(0% 0 none);
-    --color-primary-900: oklch(0% 0 none);
-    --color-primary-950: oklch(0% 0 none);
-    --color-light: oklch(96.074% 0.00347 354.69);
-    --color-light-50: oklch(100% 0 none);
-    --color-light-100: oklch(100% 0 none);
-    --color-light-200: oklch(100% 0 none);
-    --color-light-300: oklch(100% 0 none);
-    --color-light-400: oklch(100% 0 none);
-    --color-light-500: oklch(96.074% 0.00347 354.69);
-    --color-light-600: oklch(87.184% 0.01069 354.94);
-    --color-light-700: oklch(77.967% 0.02107 354.16);
-    --color-light-800: oklch(68.59% 0.02906 357.57);
-    --color-light-900: oklch(58.763% 0.04012 356.48);
-    --color-light-950: oklch(54.119% 0.03859 355.11);
-    --color-dark: oklch(15.728% 0.00397 345.79);
-    --color-dark-50: oklch(51.064% 0.02374 346.32);
-    --color-dark-100: oklch(47.421% 0.02308 344.62);
-    --color-dark-200: oklch(40.103% 0.01892 346.33);
-    --color-dark-300: oklch(32.714% 0.01325 346.17);
-    --color-dark-400: oklch(24.576% 0.00846 351.58);
-    --color-dark-500: oklch(15.728% 0.00397 345.79);
-    --color-dark-600: oklch(0% 0 none);
-    --color-dark-700: oklch(0% 0 none);
-    --color-dark-800: oklch(0% 0 none);
-    --color-dark-900: oklch(0% 0 none);
-    --color-dark-950: oklch(0% 0 none);
-    
-    --color-accent: oklch(39.948% 0.02137 350.43);
-    --color-accent-50: oklch(71.316% 0.02279 347.54);
-    --color-accent-100: oklch(67.922% 0.0252 350.43);
-    --color-accent-200: oklch(61.083% 0.03165 350.04);
-    --color-accent-300: oklch(54.146% 0.03087 351.65);
-    --color-accent-400: oklch(47.019% 0.02659 349.61);
-    --color-accent-500: oklch(39.948% 0.02137 350.43);
-    --color-accent-600: oklch(29.496% 0.01283 353.29);
-    --color-accent-700: oklch(17.888% 0.00771 346.23);
-    --color-accent-800: oklch(0% 0 none);
-    --color-accent-900: oklch(0% 0 none);
-    --color-accent-950: oklch(0% 0 none);
-    --color-muted: oklch(73.243% 0.01625 54.845);
-    --color-muted-50: oklch(100% 0 none);
-    --color-muted-100: oklch(98.288% 0.00107 17.176);
-    --color-muted-200: oklch(92.368% 0.00424 56.371);
-    --color-muted-300: oklch(86.125% 0.00864 56.295);
-    --color-muted-400: oklch(79.719% 0.01147 54.456);
-    --color-muted-500: oklch(73.243% 0.01625 54.845);
-    --color-muted-600: oklch(64.083% 0.0225 53.077);
-    --color-muted-700: oklch(54.514% 0.02242 54.868);
-    --color-muted-800: oklch(44.72% 0.01844 54.589);
-    --color-muted-900: oklch(34.241% 0.01311 57.828);
-    --color-muted-950: oklch(28.495% 0.01031 61.061);
+/*
+  Design tokens translated from the Stitch export (stitch-export/DESIGN.md).
+  These replace the Tailwind config block that was inline in each Stitch HTML file.
+  In Tailwind v4, all config lives here as CSS custom properties inside @theme.
+  The property name minus the prefix becomes the utility class:
+    --color-primary   → bg-primary, text-primary, border-primary
+    --spacing-md      → p-md, px-md, gap-md, etc.
+    --font-headline-lg → font-headline-lg (font-family)
+    --text-headline-lg → text-headline-lg (font-size)
+    --radius-2xl      → rounded-2xl
+*/
+@theme {
+  /* ── Primary (deep green) ── */
+  --color-primary: #0f5238;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #2d6a4f;
+  --color-on-primary-container: #a8e7c5;
+  --color-primary-fixed: #b1f0ce;
+  --color-primary-fixed-dim: #95d4b3;
+  --color-on-primary-fixed: #002114;
+  --color-on-primary-fixed-variant: #0e5138;
+  --color-inverse-primary: #95d4b3;
 
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Sintony', sans-serif;
+  /* ── Secondary (warm ochre) ── */
+  --color-secondary: #7d562d;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #ffca98;
+  --color-on-secondary-container: #7a532a;
+  --color-secondary-fixed: #ffdcbd;
+  --color-secondary-fixed-dim: #f0bd8b;
+  --color-on-secondary-fixed: #2c1600;
+  --color-on-secondary-fixed-variant: #623f18;
+
+  /* ── Tertiary (muted red) ── */
+  --color-tertiary: #713638;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #8d4d4e;
+  --color-on-tertiary-container: #ffcfce;
+  --color-tertiary-fixed: #ffdad9;
+  --color-tertiary-fixed-dim: #ffb3b3;
+  --color-on-tertiary-fixed: #390b0e;
+  --color-on-tertiary-fixed-variant: #6f3537;
+
+  /* ── Error ── */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* ── Surfaces ── */
+  --color-surface: #f8faf6;
+  --color-surface-dim: #d8dbd7;
+  --color-surface-bright: #f8faf6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f0;
+  --color-surface-container: #eceeea;
+  --color-surface-container-high: #e7e9e5;
+  --color-surface-container-highest: #e1e3df;
+  --color-surface-variant: #e1e3df;
+  --color-surface-tint: #2c694e;
+
+  /* ── On-surface / neutral ── */
+  --color-on-surface: #191c1a;
+  --color-on-surface-variant: #404943;
+  --color-inverse-surface: #2e312f;
+  --color-inverse-on-surface: #eff1ed;
+  --color-background: #f8faf6;
+  --color-on-background: #191c1a;
+  --color-outline: #707973;
+  --color-outline-variant: #bfc9c1;
+
+  /* ── Spacing (8px base grid) ── */
+  --spacing-base: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-edge-margin: 20px;
+  --spacing-gutter: 16px;
+
+  /* ── Border radius ── */
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+
+  /* ── Font families ── */
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-button: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Be Vietnam Pro", sans-serif;
+  --font-body-md: "Be Vietnam Pro", sans-serif;
+  --font-label-caps: "Be Vietnam Pro", sans-serif;
+
+  /* ── Font sizes (Tailwind v4: --text-* sets font-size) ── */
+  --text-headline-lg: 30px;
+  --text-headline-md: 24px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-label-caps: 14px;
+  --text-button: 16px;
 }
-html, body{
-    max-width: 100%;
-    overflow-x: hidden;
+
+/* ── Question transition animations (Benefits tab) ── */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-28px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+.anim-slide-right { animation: slideInRight 220ms ease-out both; }
+.anim-slide-left  { animation: slideInLeft  220ms ease-out both; }
+
+/* Material Symbols default variant settings */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  user-select: none;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  /* Warm cream floor — the design system "Floor Level" */
+  background-color: #fefae0;
 }

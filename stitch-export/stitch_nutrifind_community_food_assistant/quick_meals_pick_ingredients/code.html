@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline-variant": "#bfc9c1",
+                    "on-secondary-fixed-variant": "#623f18",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e1e3df",
+                    "tertiary-fixed": "#ffdad9",
+                    "on-error": "#ffffff",
+                    "background": "#f8faf6",
+                    "on-primary-container": "#a8e7c5",
+                    "surface-container-highest": "#e1e3df",
+                    "secondary-fixed-dim": "#f0bd8b",
+                    "on-surface": "#191c1a",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#ffca98",
+                    "on-tertiary-fixed": "#390b0e",
+                    "tertiary-fixed-dim": "#ffb3b3",
+                    "secondary-fixed": "#ffdcbd",
+                    "inverse-on-surface": "#eff1ed",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f2f4f0",
+                    "secondary": "#7d562d",
+                    "surface-tint": "#2c694e",
+                    "inverse-primary": "#95d4b3",
+                    "on-primary-fixed": "#002114",
+                    "tertiary-container": "#8d4d4e",
+                    "on-background": "#191c1a",
+                    "primary-fixed-dim": "#95d4b3",
+                    "on-tertiary-container": "#ffcfce",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#7a532a",
+                    "on-primary-fixed-variant": "#0e5138",
+                    "outline": "#707973",
+                    "surface": "#f8faf6",
+                    "surface-container-high": "#e7e9e5",
+                    "surface-bright": "#f8faf6",
+                    "primary": "#0f5238",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#2d6a4f",
+                    "surface-container": "#eceeea",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#b1f0ce",
+                    "on-tertiary-fixed-variant": "#6f3537",
+                    "surface-dim": "#d8dbd7",
+                    "inverse-surface": "#2e312f",
+                    "on-surface-variant": "#404943",
+                    "on-secondary-fixed": "#2c1600",
+                    "tertiary": "#713638"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "16px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "lg": "32px",
+                    "gutter": "16px",
+                    "edge-margin": "20px",
+                    "xl": "48px",
+                    "md": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Be Vietnam Pro"],
+                    "button": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "label-caps": ["Be Vietnam Pro"],
+                    "headline-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "button": ["16px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-caps": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-cream { background-color: #FEFAE0; }
+        .border-warm { border-color: #E9EDC9; }
+        .shadow-soft { shadow: 0 4px 12px rgba(45, 106, 79, 0.08); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-cream min-h-screen pb-40">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full bg-[#FEFAE0] dark:bg-slate-950 flex justify-between items-center px-5 py-4 h-16 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#2D6A4F] dark:text-green-400 cursor-pointer active:scale-95 transition-transform">menu</span>
+<span class="text-2xl font-extrabold text-[#2D6A4F] dark:text-green-400 font-['Plus_Jakarta_Sans'] tracking-tight">NutriFind</span>
+</div>
+<button class="text-slate-600 dark:text-slate-400 font-['Plus_Jakarta_Sans'] font-bold text-lg tracking-tight hover:opacity-75 transition-opacity">EN/ES</button>
+</header>
+<main class="px-edge-margin pt-sm">
+<!-- Hero Instruction -->
+<section class="mb-lg">
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-xs">What's in your pantry?</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Pick the items you have on hand, and we'll find budget-friendly meals for you.</p>
+</section>
+<!-- Ingredient Picker Grid -->
+<div class="grid grid-cols-3 gap-xs md:gap-sm mb-xl">
+<!-- Rice -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">rice_bowl</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">rice</span>
+</button>
+<!-- Beans -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">database</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">beans</span>
+</button>
+<!-- Eggs -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">egg</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">eggs</span>
+</button>
+<!-- Chicken - Selected State Example -->
+<button class="flex flex-col items-center justify-center p-md bg-primary border-2 border-primary rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-white mb-xs" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="font-label-caps text-label-caps text-white">chicken</span>
+</button>
+<!-- Tortillas -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">circle</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">tortillas</span>
+</button>
+<!-- Potatoes -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">comedy_mask</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">potatoes</span>
+</button>
+<!-- Onions -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">radio_button_checked</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">onions</span>
+</button>
+<!-- Tomatoes - Selected State Example -->
+<button class="flex flex-col items-center justify-center p-md bg-primary border-2 border-primary rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-white mb-xs" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+<span class="font-label-caps text-label-caps text-white">tomatoes</span>
+</button>
+<!-- Ground Beef -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">skillet</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">ground beef</span>
+</button>
+<!-- Canned Tuna -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">set_meal</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">canned tuna</span>
+</button>
+<!-- Pasta -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">vaping_rooms</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">pasta</span>
+</button>
+<!-- Cheese -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">grid_view</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">cheese</span>
+</button>
+<!-- Chiles -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">fire_hydrant</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">chiles</span>
+</button>
+<!-- Avocado -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">spa</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">avocado</span>
+</button>
+<!-- Bananas -->
+<button class="flex flex-col items-center justify-center p-md bg-white border border-warm rounded-xl shadow-soft active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary mb-xs">lunch_dining</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">bananas</span>
+</button>
+</div>
+<!-- Floating Call to Action Container -->
+<div class="fixed bottom-24 left-0 w-full px-edge-margin z-40">
+<button class="w-full h-xl bg-primary text-white font-button text-button rounded-full shadow-lg flex items-center justify-center gap-xs active:scale-[0.98] transition-transform">
+<span>Show me meals</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 pb-safe px-4 bg-white dark:bg-slate-900 border-t border-[#E9EDC9] dark:border-slate-800 shadow-[0_-4px_12px_rgba(45,106,79,0.08)] dark:shadow-none">
+<!-- Near Me -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-wider mt-1">Near Me</span>
+</a>
+<!-- Benefits -->
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-wider mt-1">Benefits</span>
+</a>
+<!-- Quick Meals (ACTIVE) -->
+<a class="flex flex-col items-center justify-center text-[#2D6A4F] dark:text-green-400 after:content-[''] after:w-1 after:h-1 after:bg-[#2D6A4F] after:rounded-full after:mt-1 transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[11px] font-semibold uppercase tracking-wider mt-1">Quick Meals</span>
+</a>
+</nav>
+<!-- Visual Polish: Decorative Tonal Element -->
+<div class="fixed top-0 right-0 -z-10 w-64 h-64 bg-primary/5 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-96 h-96 bg-secondary/5 blur-3xl rounded-full -translate-x-1/2 translate-y-1/2"></div>
+</body></html>
